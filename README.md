@@ -33,13 +33,13 @@ After completing the above steps, update this read me with your own text. Delete
 
 # Final Project
 ### First Last / Student ID: 000####### 
- Hello my name is ______ . I am a ______ student from ____. Here's some additional information about me...
+ Hello my name is Ross Epstein . I am a BA of Web Design and Development student from Kentucky. Here's some additional information about me:  I tour as a performer on the Renaissance Faire Circuit as "Luku the Mad Skald".  I spend a good 7 months of the year doing this including two shows in Florida, one in Connecticut, and one in Kentucky, as well as a few one weekend shows here and there.  I have also been a full stack web developer since 2017, and am currently working for the USDA - Forest Service.
 
 
 ![Degree Program](https://img.shields.io/badge/degree-web%20design%20%26%20development-blue.svg)&nbsp; 
 
 
-eMaill@student.fullsail.edu -- (###) ###-#### 
+repstein@student.fullsail.edu -- (502) 751-1770
 
 
 ---
