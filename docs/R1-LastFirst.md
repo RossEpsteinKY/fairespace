@@ -52,4 +52,25 @@ What resource(s) did you find most helpful for this research assignment and why?
 
 
 
+< br>
+* **RESEARCH - ASSIGNMENT TITLE HERE, .i.e. ..."Research & Integrative Activity - Week 2"**
+* **Ross Epstein**
+* **Sept 11th 2022**
+
+<br>
+
+## Example Topic Title
+API Design
+
+* Api Design
+* DB Design
+* Project Boards
+
+In all honesty, I didn't really learn much this week as these are concepts I have been working with for the past almost six years at my 9-to-5 job.  What I will say is I have found a new love for some of the database design tools.  I hadn't previously worked with dbdocs.io before
+
+<br>
+
+
+
+<br>
 
