@@ -4,7 +4,7 @@ const navigation = [
   { name: 'Photos', href: '#' },
   { name: 'Groups', href: '#' },
   { name: 'Faires', href: '#' },
-  { name: 'Profile', href: '#', },
+  { name: 'Profile', href: '/profile', },
 ]
 
 export default function Navbar() {
