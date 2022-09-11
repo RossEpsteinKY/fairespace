@@ -4,12 +4,12 @@ const navigation = [
   { name: 'Photos', href: '#' },
   { name: 'Groups', href: '#' },
   { name: 'Faires', href: '#' },
-  { name: 'Profile', href: '#' },
+  { name: 'Profile', href: '#', },
 ]
 
 export default function Navbar() {
   return (
-    <header className="bg-sky-800">
+    <header className="bg-indigo-600">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div className="flex w-full items-center justify-between border-b border-indigo-500 py-6 lg:border-none">
           <div className="flex items-center">
