@@ -101,6 +101,9 @@ module.exports = (sequelize, DataTypes) => {
 
     User.associate = models => {
         User.hasMany(models.Friends);
+        User.hasMany(models.Groups);
+        User.hasOne(models.AccountInfo);
+        User.hasMany(models.Photos);
     };
 
     return User;
