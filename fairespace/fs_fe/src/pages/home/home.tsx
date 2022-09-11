@@ -9,21 +9,7 @@ import {
 } from '@heroicons/react/24/outline'
 
 const features = [
-  {
-    name: 'Push to Deploy',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: CloudArrowUpIcon,
-  },
-  {
-    name: 'SSL Certificates',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: LockClosedIcon,
-  },
-  {
-    name: 'Simple Queues',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: ArrowPathIcon,
-  },
+
   {
     name: 'Advanced Security',
     description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
@@ -45,9 +31,8 @@ export default function Home() {
   return (
     <div className="relative bg-white py-16 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="text-lg font-semibold text-indigo-600">Deploy faster</h2>
         <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Everything you need to deploy your app
+          RenfaireSpace
         </p>
         <p className="mx-auto mt-5 max-w-prose text-xl text-gray-500">
           Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper
