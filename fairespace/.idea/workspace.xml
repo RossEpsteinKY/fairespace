@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed876ba6-4c89-4299-a3da-5f6f37cc67ca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/fs_fe/src/pages/profile/profile.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs_fe/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs_fe/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs_fe/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/fs_fe/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fs_fe/src/components/navbar/navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/fs_fe/src/components/navbar/navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fs_fe/src/pages/profile/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/fs_fe/src/pages/profile/profile.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +37,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "ruby.rails.projectView.checked": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.sourceCode.TypeScript"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -71,11 +70,15 @@
       <workItem from="1662908855441" duration="6000" />
       <workItem from="1662911757372" duration="192000" />
       <workItem from="1662912190447" duration="65000" />
-      <workItem from="1662912267462" duration="591000" />
+      <workItem from="1662912267462" duration="2448000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

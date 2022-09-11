@@ -27,6 +27,7 @@ const people = [
   // More people...
 ]
 
+
 export default function Profile() {
   return (
     <div className="bg-white">
