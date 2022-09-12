@@ -5,6 +5,7 @@ const {param} = require("express/lib/router");
 const bodyParser = require('body-parser');
 // const session = require('express-session');
 const session = require('cookie-session');
+const authController = require('./src/controllers/auth/auth.controller');
 const app = express();
 require('dotenv').config();
 
@@ -44,10 +45,10 @@ app.use(function(req, res, next) {
     next();
 });
 
-// app.use('/quizzes', quizzesController);
+// app.use('/quizzes', authController);
 // app.use('/questions', questionController);
 // app.use('/choices', choicesController);
-// app.use('/auth', authController);
+app.use('/auth', authController);
 
 // app.get('/', isAuthenticated, async  (req,res) => {
 //     console.log('TOKEN', req.session.access_token);

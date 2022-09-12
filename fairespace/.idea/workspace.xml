@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed876ba6-4c89-4299-a3da-5f6f37cc67ca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/fs_be/src/controllers/auth/auth.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs_fe/src/pages/profile/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/fs_fe/src/pages/profile/profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fs_be/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/fs_be/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fs_be/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fs_be/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fs_be/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fs_be/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fs_be/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fs_be/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,16 +37,16 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ruby.rails.projectView.checked": "true",
-    "settings.editor.selected.configurable": "preferences.sourceCode.TypeScript"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.TypeScript&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/fs_fe/src" />
@@ -69,7 +73,7 @@
       <workItem from="1662908855441" duration="6000" />
       <workItem from="1662911757372" duration="192000" />
       <workItem from="1662912190447" duration="65000" />
-      <workItem from="1662912267462" duration="5593000" />
+      <workItem from="1662912267462" duration="8666000" />
     </task>
     <servers />
   </component>
