@@ -1,3 +1,7 @@
+'use strict';
+const {
+    Model, Sequelize
+} = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
     const Friends = sequelize.define('Friends', {
         id: {

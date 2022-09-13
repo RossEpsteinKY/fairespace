@@ -8,6 +8,9 @@ const session = require('cookie-session');
 const authController = require('./src/controllers/auth/auth.controller');
 const app = express();
 require('dotenv').config();
+const {
+    Model, Sequelize
+} = require('sequelize');
 
 // const quizzesController = require('./src/controllers/quizzes');
 // const questionController = require('./src/controllers/questions');
@@ -17,7 +20,7 @@ require('dotenv').config();
 // const { isAuthenticated } = require("./src/middleware/auth");
 // const helmet = require('helmet');
 // const hpp = require('hpp');
-// const csurf = require('csurf');
+// const csurf = req uire('csurf');
 
 
 
@@ -29,6 +32,12 @@ app.use(
         expires: new Date(Date.now() + 24 * 60 * 60 * 1000), // 24 hour expiration token
     })
 );
+
+// var sequelize = new Sequelize(global.config.dbConfig.name, global.config.dbConfig.user, global.config.dbConfig.password, {
+//     host: global.config.dbConfig.host,
+//     port: global.config.dbConfig.port,
+//     pool: false
+// });
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.set('views',__dirname + '/src/views');

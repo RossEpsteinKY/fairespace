@@ -1,4 +1,7 @@
 'use strict';
+const {
+    Model, Sequelize
+} = require('sequelize');
 // const {
 //     Model, Sequelize
 // } = require('sequelize');
@@ -70,7 +73,8 @@ module.exports = (sequelize, DataTypes) => {
             defaultValue: DataTypes.UUIDV4,
             allowNull: false,
             autoIncrement: false,
-        },     username: {
+        },
+        username: {
             type: "varchar(255)",
             allowNull: false,
         },
@@ -87,11 +91,11 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: true,
             defaultValue: "N/A"
         },
-        // photos: {
-        //     type: "varchar(255)",
-        //     allowNull: true,
-        //     defaultValue: "N/A"
-        // },
+        photos: {
+            type: "varchar(255)",
+            allowNull: true,
+            defaultValue: "N/A"
+        },
         account_id: {
             type: "varchar(255)",
             allowNull: true,

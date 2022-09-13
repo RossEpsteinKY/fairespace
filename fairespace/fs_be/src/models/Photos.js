@@ -1,3 +1,7 @@
+'use strict';
+const {
+    Model, Sequelize
+} = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
     const Photos = sequelize.define('Photos', {
         id: {
@@ -11,7 +15,11 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        profile_photo: DataTypes.BOOL,
+        profile_photo: {
+            type: Sequelize.INTEGER,
+            allowNull: true,
+            defaultValue: 0,
+        },
         description: {
             type: "varchar(255)",
             allowNull: true,
@@ -46,3 +54,4 @@ module.exports = (sequelize, DataTypes) => {
 
     return Photos;
 };
+

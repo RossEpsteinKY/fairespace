@@ -6,12 +6,18 @@ const {param} = require("express/lib/router");
 const bodyParser = require('body-parser');
 const querystring = require("querystring");
 const request = require("request");
+const {Sequelize} = require("sequelize");
+const bcrypt = require('bcrypt');
 const app = express();
+const {Choices} = require("../../models");
+app.use(bodyParser.urlencoded({ extended: false }))
+router.use(bodyParser.urlencoded({ extended: false }))
+router.use(bodyParser.json())
+
 
 router.get('/login', (req,res) => {
     console.log('LOGIN ATTEMPTED');
-    // return('login');
-    // res.render('auth/login');
+
 });
 
 router.get('/deleteSession', (req,res) => {

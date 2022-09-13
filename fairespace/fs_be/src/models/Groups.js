@@ -1,5 +1,8 @@
 'use strict';
-
+'use strict';
+const {
+    Model, Sequelize
+} = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
     const Groups = sequelize.define('Groups', {
         id: {
