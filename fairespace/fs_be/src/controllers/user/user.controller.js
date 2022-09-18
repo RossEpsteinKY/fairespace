@@ -4,7 +4,7 @@ const {request, response} = require("express");
 const {param} = require("express/lib/router");
 const bodyParser = require('body-parser');
 const app = express();
-const { isAuthenticated } = require('../middleware/auth');
+// const { isAuthenticated } = require('../middleware/auth');
 // let users = require('../../old_models/questions.model');
 const {User, Quizzes} = require("../../models/User");
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -73,3 +73,5 @@ router.delete('/:id', async (req, res) => {
         res.send("ERROR: UNABLE TO DELETE USER WITH ID " + req.params.id, 404);
     }
 })
+
+module.exports = router;

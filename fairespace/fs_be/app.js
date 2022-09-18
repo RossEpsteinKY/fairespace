@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 // const session = require('express-session');
 const session = require('cookie-session');
 const authController = require('./src/controllers/auth/auth.controller');
+const userController = require('./src/controllers/user/user.controller');
 const app = express();
 require('dotenv').config();
 const {
@@ -58,7 +59,7 @@ app.use(function(req, res, next) {
 // app.use('/questions', questionController);
 // app.use('/choices', choicesController);
 app.use('/auth', authController);
-
+app.use('/user', userController);
 // app.get('/', isAuthenticated, async  (req,res) => {
 //     console.log('TOKEN', req.session.access_token);
 //     res.render('home');
@@ -66,3 +67,5 @@ app.use('/auth', authController);
 
 app.listen(5000);
 console.log('Listening on port 5000!');
+
+module.exports = router;
