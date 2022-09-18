@@ -45,8 +45,31 @@ router.post('/', async (req, res) => {
     }
 })
 
+router.put('/:id', async (req, res) => {
 
-// router.get('/',isAuthenticated, async (req, res) => {
-//     const questions = await Questions.findAll()
-//     res.render('questions/index',{questions});
-// })
+    try {
+        const id = Number(req.params.id);
+        console.log('body', req.body);
+        const userToUpdate = req.body.user;
+
+        const userToUpdateFind = await User.update({ userToUpdate }, {
+            where: { id }
+        })
+        res.send('successfully updated user ' + userToUpdateFind);
+    } catch (e) {
+        res.send("ERROR: UNABLE TO UPDATE USER WITH ID " + req.params.id, 404);
+    }
+})
+
+router.delete('/:id', async (req, res) => {
+    const id = Number(req.params.id);
+    console.log('id',id);
+    try {
+        await User.destroy({
+            where: { id }
+        })
+        res.send('successfully deleted user ' + id);
+    } catch (e) {
+        res.send("ERROR: UNABLE TO DELETE USER WITH ID " + req.params.id, 404);
+    }
+})
