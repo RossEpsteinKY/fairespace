@@ -1,5 +1,5 @@
 CREATE TABLE "users" (
-  "id" int,
+  "id" SERIAL PRIMARY KEY,
   "username" varchar,
   "password" varchar,
   "country_code" int,
@@ -7,7 +7,7 @@ CREATE TABLE "users" (
   "photos" varchar,
   "created_at" varchar,
   "updated_at" varchar,
-  "account_id" int,
+  "account_id" uuid,
   "friends" varchar,
   "groups" int
 );
@@ -26,7 +26,7 @@ CREATE TABLE "account_info" (
 CREATE TABLE "friends_table" (
   "id" SERIAL PRIMARY KEY,
   "account" varchar,
-  "main_id" int,
+  "main_id" uuid,
   "first_name" varchar,
   "last_name" varchar,
   "created_at" timestamp,
@@ -55,7 +55,7 @@ CREATE TABLE "groups" (
   "country_code" int,
   "state" varchar,
   "postal_code" int,
-  "members" varchar
+  "members" uuid
 );
 
 CREATE INDEX ON "users" ("id", "account_id");

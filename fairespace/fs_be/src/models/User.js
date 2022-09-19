@@ -50,8 +50,6 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: true,
             defaultValue: "N/A"
         },
-
-
     },
     {
         sequelize,

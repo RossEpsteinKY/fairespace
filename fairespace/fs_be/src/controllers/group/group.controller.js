@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const app = express();
 // const { isAuthenticated } = require('../middleware/auth');
 // let groups = require('../../old_models/questions.model');
-const {Group, Quizzes} = require("../../models/Group");
+const {Group, Quizzes} = require("../../models/Groups");
 app.use(bodyParser.urlencoded({ extended: false }))
 router.use(bodyParser.urlencoded({ extended: false }))
 router.use(bodyParser.json())

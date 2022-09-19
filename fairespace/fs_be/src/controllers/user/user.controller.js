@@ -4,6 +4,8 @@ const {request, response} = require("express");
 const {param} = require("express/lib/router");
 const bodyParser = require('body-parser');
 const app = express();
+var bcrypt = require("bcrypt-nodejs");
+
 // const { isAuthenticated } = require('../middleware/auth');
 // let users = require('../../old_models/questions.model');
 const {User, Quizzes} = require("../../models/User");
@@ -32,18 +34,38 @@ router.get('/:id', async (req, res) => {
     }
 })
 
-router.post('/', async (req, res) => {
-    console.log('body', req.body);
-    try {
+router.post('/', async(req, res, next)=>{
+    //res.status(201).json(req.body);
+    //add new user and return 201
+    const salt = await bcrypt.genSalt(10);
+    var usr = {
+        first_name : req.body.first_name,
+        last_name : req.body.last_name,
+        email : req.body.email,
+        password : await bcrypt.hash(req.body.password, salt)
+    };
+    let created_user = await User.create(usr);
+    res.status(201).json(created_user);
+});
 
-        const userToCreate = req.body;
-
-        const userCreated = await User.create(userToCreate)
-        return res.json(userCreated);
-    } catch (e) {
-        res.send("ERROR: UNABLE TO CREATE USER" + req.body, 404);
-    }
-})
+// router.post('/', async (req, res) => {
+//     console.log('body', req.body);
+//     try {
+//
+//
+//
+//         // let password = "testing";
+//         // let testEnc = bcrypt.hash(password, bcrypt.genSaltSync(8));
+//         // console.log('test',testEnc);
+//         //
+//         // const userToCreate = req.body;
+//         //
+//         // // const userCreated = await User.create(userToCreate)
+//         // // return res.json(userCreated);
+//     } catch (e) {
+//         res.send("ERROR: UNABLE TO CREATE USER" + req.body, 404);
+//     }
+// })
 
 router.put('/:id', async (req, res) => {
 
