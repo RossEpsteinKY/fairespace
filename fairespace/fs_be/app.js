@@ -7,6 +7,10 @@ const bodyParser = require('body-parser');
 const session = require('cookie-session');
 const authController = require('./src/controllers/auth/auth.controller');
 const userController = require('./src/controllers/user/user.controller');
+const photosController = require('./src/controllers/photo/photo.controller');
+const accountInfoController = require('./src/controllers/account/account.controller');
+const friendsController = require('./src/controllers/friends/friends.controller');
+const groupController = require('./src/controllers/group/group.controller');
 const app = express();
 require('dotenv').config();
 const {
@@ -60,6 +64,10 @@ app.use(function(req, res, next) {
 // app.use('/choices', choicesController);
 app.use('/auth', authController);
 app.use('/user', userController);
+app.use('/photos', photosController);
+app.use('/group', groupController);
+app.use('/account', accountInfoController);
+app.use('/friends', friendsController);
 // app.get('/', isAuthenticated, async  (req,res) => {
 //     console.log('TOKEN', req.session.access_token);
 //     res.render('home');
