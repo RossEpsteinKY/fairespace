@@ -5,7 +5,7 @@ const navigation = [
   { name: 'Friends', href: '#' },
   { name: 'Photos', href: '#' },
   { name: 'Groups', href: '#' },
-  { name: 'Faires', href: '#' },
+  { name: 'Faires', href: '/faires' },
   { name: 'Profile', href: '/profile', },
 ]
 
