@@ -14,134 +14,92 @@
   }
   ```
 */
+import { CalendarIcon, MapPinIcon, UsersIcon } from '@heroicons/react/20/solid'
+
 
   // More people...
+const groups = [
+  {
 
+      id:'1',
+      name: 'Kentucky Performers',
+      leaderName: 'Ross Epstein',
+      imageUrl:
+        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    dateJoined: '2020-01-07',
+    href: '#',
+    type: "Participant Only"
+  },  {
+
+      id:'2',
+      name: 'Kentucky Performers',
+      leaderName: 'Ross Epstein',
+      imageUrl:
+        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    dateJoined: '2020-01-07',
+    href: '#',
+    type: "Participant Only"
+  }, {
+
+      id:'3',
+      name: 'Kentucky Performers',
+      leaderName: 'Ross Epstein',
+      imageUrl:
+        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    dateJoined: '2020-01-07',
+    href: '#',
+    type: "Participant Only"
+  },  {
+
+      id:'3',
+      name: 'Kentucky Performers',
+      leaderName: 'Ross Epstein',
+      imageUrl:
+        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    dateJoined: '2020-01-07',
+    href: '#',
+    type: "Participant Only"
+  },
+]
 
 export default function Groups() {
 
 // friends placeholder
-const friends = [
-  {
-    name: 'Friend Placeholder Name',
-    role: 'Senior Designer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },  {
-    name: 'Friend Placeholder Name',
-    role: 'Senior Designer',
-    imageUrl:
-      'https://randomuser.me/api/portraits/women/8.jpg',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },  {
-    name: 'Friend Placeholder Name',
-    role: 'Senior Designer',
-    imageUrl:
-      'https://randomuser.me/api/portraits/men/2.jpg',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },  {
-    name: 'Friend Placeholder Name',
-    role: 'Senior Designer',
-    imageUrl:
-      'https://randomuser.me/api/portraits/men/22.jpg',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },  {
-    name: 'Friend Placeholder Name',
-    role: 'Senior Designer',
-    imageUrl:
-      'https://randomuser.me/api/portraits/women/12.jpg',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },  {
-    name: 'Friend Placeholder Name',
-    role: 'Senior Designer',
-    imageUrl:
-      'https://randomuser.me/api/portraits/women/90.jpg',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },  {
-    name: 'Friend Placeholder Name',
-    role: 'Senior Designer',
-    imageUrl:
-      'https://randomuser.me/api/portraits/women/99.jpg',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  // More people...
-]
-// profile placeholder data
-const profile =
-  {
-    name: 'Emma Dorsey',
-    role: 'Booth Worker',
-    imageUrl:
-      'https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  }
+
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8 lg:py-24">
-        <div className="space-y-12 lg:grid lg:grid-cols-4 lg:gap-8 lg:space-y-0">
-
-          <div className="lg:col-span-2">
-            <ul
-              role="list"
-              className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8"
-            >
-                <li key={profile.name}>
-                  <div className="space-y-4">
-                    <div className="aspect-w-3 aspect-h-2">
-                      <img className="rounded-lg object-cover shadow-lg" src={profile.imageUrl} alt="" />
-                    </div>
-                    <div className="space-y-1 text-lg font-medium leading-6">
-                      <h3>{profile.name}</h3>
-                      <p className="text-indigo-600">{profile.role}</p>
-                    </div>
-                    <div className="text-lg">
-                      <p className="text-gray-500">{profile.bio}</p>
-                    </div>
-
-
+<div className="overflow-hidden bg-white shadow-lg pt sm:rounded-md">
+      <ul role="list" className="divide-y divide-gray-500">
+        {groups.map((group) => (
+          <li key={group.id} className="pt-2">
+            <a href="#" className="block hover:bg-gray-200">
+              <div className="px-4 py-4 sm:px-6">
+                <div className="flex items-center justify-between">
+                  <p className="truncate text-sm font-medium text-indigo-600">{group.name}</p>
+                  <div className="ml-2 flex flex-shrink-0">
+                    <p className="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
+                      {group.type}
+                    </p>
                   </div>
-                </li>
-
-            </ul>
-
-          </div>
-<div className="col-span-2 space-y-2 sm:space-y-4">
-                                  <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">{profile.name} Profile</h2>
-                                  <p className="text-xl text-gray-500">
-                                    Nulla quam felis, enim faucibus proin velit, ornare id pretium. Augue ultrices sed arcu condimentum
-                                    vestibulum suspendisse. Volutpat eu faucibus vivamus eget bibendum cras.
-                                  </p>
-                                  <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Friends</h2>
-                                  <ul role="list" className="space-y-1 sm:grid sm:grid-cols-1 sm:gap-4  lg:grid-cols-4 ">
-                                              {friends.map((friend) => (
-                                                <li key={friend.name} className=" rounded-full py-4 bg-gray-800  text-center px-4 xl:text-center">
-                                                  <div className="xl:mx-auto">
-                                                    <img className=" mx-auto xl:object-center rounded-full xl:h-20 xl:w-20" src={friend.imageUrl} alt={friend.name + " Profile"} />
-                                                    <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
-                                                      <div className="space-y-1 text-lg  font-medium leading-4">
-                                                        <h3 className="text-white ">{friend.name}</h3>
-                                                      </div>
-
-
-                                                    </div>
-                                                  </div>
-                                                </li>
-                                              ))}
-                                            </ul>
-                        </div>
-        </div>
-
-      </div>
+                </div>
+                <div className="mt-2 sm:flex sm:justify-between">
+                  <div className="sm:flex">
+                    <p className="flex items-center text-sm text-gray-500">
+                      <UsersIcon className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
+                      Admin Name: {group.leaderName}
+                    </p>
+                    <p className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-6">
+                      <MapPinIcon className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
+                      Date Joined: {group.dateJoined}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
     </div>
   )
 }

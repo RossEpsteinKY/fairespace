@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@ellreka/tailwindcss-nth-child": "^1.0.1",
     "@headlessui/react": "^1.6.6",
     "@heroicons/react": "^1.0.6",
     "bcrypt": "^5.0.1",
@@ -31,6 +32,7 @@
     "request": "^2.88.2",
     "sequelize": "^6.21.6",
     "sequelize-typescript-migration-lts": "^3.2.1",
+    "tailwindcss-nth-child": "^0.0.6",
     "twig": "^1.15.4"
   },
   "devDependencies": {
