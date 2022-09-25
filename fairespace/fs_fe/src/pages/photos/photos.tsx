@@ -88,60 +88,52 @@ const profile =
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8 lg:py-24">
-        <div className="space-y-12 lg:grid lg:grid-cols-4 lg:gap-8 lg:space-y-0">
-
-          <div className="lg:col-span-2">
-            <ul
-              role="list"
-              className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8"
-            >
-                <li key={profile.name}>
-                  <div className="space-y-4">
-                    <div className="aspect-w-3 aspect-h-2">
-                      <img className="rounded-lg object-cover shadow-lg" src={profile.imageUrl} alt="" />
-                    </div>
-                    <div className="space-y-1 text-lg font-medium leading-6">
-                      <h3>{profile.name}</h3>
-                      <p className="text-indigo-600">{profile.role}</p>
-                    </div>
-                    <div className="text-lg">
-                      <p className="text-gray-500">{profile.bio}</p>
-                    </div>
-
-
-                  </div>
-                </li>
-
-            </ul>
-
-          </div>
-<div className="col-span-2 space-y-2 sm:space-y-4">
-                                  <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">{profile.name} Profile</h2>
-                                  <p className="text-xl text-gray-500">
-                                    Nulla quam felis, enim faucibus proin velit, ornare id pretium. Augue ultrices sed arcu condimentum
-                                    vestibulum suspendisse. Volutpat eu faucibus vivamus eget bibendum cras.
-                                  </p>
-                                  <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Friends</h2>
-                                  <ul role="list" className="space-y-1 sm:grid sm:grid-cols-1 sm:gap-4  lg:grid-cols-4 ">
-                                              {friends.map((friend) => (
-                                                <li key={friend.name} className=" rounded-full py-4 bg-gray-800  text-center px-4 xl:text-center">
-                                                  <div className="xl:mx-auto">
-                                                    <img className=" mx-auto xl:object-center rounded-full xl:h-20 xl:w-20" src={friend.imageUrl} alt={friend.name + " Profile"} />
-                                                    <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
-                                                      <div className="space-y-1 text-lg  font-medium leading-4">
-                                                        <h3 className="text-white ">{friend.name}</h3>
-                                                      </div>
-
-
-                                                    </div>
-                                                  </div>
-                                                </li>
-                                              ))}
-                                            </ul>
-                        </div>
+<h1 className="text-2xl">Recently Uploaded Photos</h1>
+<section className="overflow-hidden text-gray-700 ">
+  <div className="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
+    <div className="flex flex-wrap -m-1 md:-m-2">
+      <div className="flex flex-wrap w-1/3">
+        <div className="w-full p-1 md:p-2">
+          <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+            src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" />
+        </div>
+      </div>
+      <div className="flex flex-wrap w-1/3">
+        <div className="w-full p-1 md:p-2">
+          <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+            src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp" />
+        </div>
+      </div>
+      <div className="flex flex-wrap w-1/3">
+        <div className="w-full p-1 md:p-2">
+          <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+            src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" />
+        </div>
+      </div>
+      <div className="flex flex-wrap w-1/3">
+        <div className="w-full p-1 md:p-2">
+          <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+            src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp" />
+        </div>
+      </div>
+      <div className="flex flex-wrap w-1/3">
+        <div className="w-full p-1 md:p-2">
+          <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+            src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp" />
+        </div>
+      </div>
+      <div className="flex flex-wrap w-1/3">
+        <div className="w-full p-1 md:p-2">
+          <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+            src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
         </div>
 
-      </div>
+
     </div>
   )
 }

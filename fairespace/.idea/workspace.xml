@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ed876ba6-4c89-4299-a3da-5f6f37cc67ca" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs_be/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fs_be/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs_be/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fs_be/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs_be/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fs_be/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs_fe/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fs_fe/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs_fe/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fs_fe/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs_fe/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/fs_fe/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs_fe/src/pages/groups/groups.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/fs_fe/src/pages/groups/groups.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fs_fe/src/pages/photos/photos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/fs_fe/src/pages/photos/photos.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
