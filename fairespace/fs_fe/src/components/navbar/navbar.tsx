@@ -18,9 +18,9 @@ const [loggedIn, setLoggedIn ] = useState(false);
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div className="flex w-full items-center justify-between border-b border-indigo-500 py-6 lg:border-none">
           <div className="flex items-center">
-            <a href="#">
+            <a href="/">
               <span className="sr-only">Your Company</span>
-              <img className="h-10 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=white" alt="" />
+              <b><h2 className="text-white text-2xl text-base">FaireSpace</h2></b>
             </a>
             <div className="ml-10 hidden space-x-8 lg:block">
               {navigation.map((link) => (
