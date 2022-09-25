@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed876ba6-4c89-4299-a3da-5f6f37cc67ca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/fs_fe/src/pages/faires/faires.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fs_fe/src/pages/photos/photos.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fs_fe/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/fs_fe/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fs_fe/src/components/navbar/navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/fs_fe/src/components/navbar/navbar.tsx" afterDir="false" />

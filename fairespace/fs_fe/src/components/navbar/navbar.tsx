@@ -3,7 +3,7 @@ import {Fragment, useEffect, useState} from 'react';
 
 const navigation = [
   { name: 'Friends', href: '#' },
-  { name: 'Photos', href: '#' },
+  { name: 'Photos', href: '/photos' },
   { name: 'Groups', href: '#' },
   { name: 'Faires', href: '/faires' },
   { name: 'Profile', href: '/profile', },
