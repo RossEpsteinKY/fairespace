@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ed876ba6-4c89-4299-a3da-5f6f37cc67ca" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs_be/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fs_be/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs_be/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fs_be/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs_be/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fs_be/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs_be/src/controllers/account/account.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/fs_be/src/controllers/account/account.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs_be/src/controllers/friends/friends.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/fs_be/src/controllers/friends/friends.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs_be/src/controllers/group/group.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/fs_be/src/controllers/group/group.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs_be/src/controllers/photo/photo.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/fs_be/src/controllers/photo/photo.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs_be/src/controllers/user/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/fs_be/src/controllers/user/user.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs_be/src/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/fs_be/src/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fs_be/src/models/Friends.js" beforeDir="false" afterPath="$PROJECT_DIR$/fs_be/src/models/Friends.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,9 +53,9 @@
       <recent name="$PROJECT_DIR$/fs_be" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fs_be" />
       <recent name="$PROJECT_DIR$/fs_fe/src/components/navbar" />
       <recent name="$PROJECT_DIR$/fs_fe/src" />
-      <recent name="$PROJECT_DIR$/fs_be" />
       <recent name="$PROJECT_DIR$/fs_be/src" />
     </key>
   </component>
@@ -82,6 +74,7 @@
       <workItem from="1662912190447" duration="65000" />
       <workItem from="1662912267462" duration="14342000" />
       <workItem from="1663518718832" duration="5882000" />
+      <workItem from="1663893352994" duration="2286000" />
     </task>
     <servers />
   </component>

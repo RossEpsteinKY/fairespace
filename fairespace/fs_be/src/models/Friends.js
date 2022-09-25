@@ -11,8 +11,6 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false,
             autoIncrement: false,
         },
-        status: DataTypes.STRING,
-        invoiceNumber: DataTypes.STRING,
         first_name: {
             type: "varchar(255)",
             allowNull: true,
