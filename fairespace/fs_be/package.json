@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "dev": "nodemon -e js,--watch twig --watch src",
-    "heroku-postbuild": "cd client && npm install && npm run build",
+    "heroku-postbuild": "cd fs_be && npm install && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
