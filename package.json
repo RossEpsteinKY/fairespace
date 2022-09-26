@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "heroku-postbuild": "cd fairespace/fs_fe && npm install && npm run build"
+    "heroku-postbuild": "cd fairespace/fs_fe && npm install && npm run build",
+    "heroku-postbuild": "cd fairespace/fs_be && npm install && npm run build"
   }
 }
