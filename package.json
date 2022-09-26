@@ -1,9 +1,8 @@
 {
-  "name": "my-project",
+  "name": "fairespace",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "postinstall": "npm --cwd fairespace/fs_be --production=false install",
-    "build": "yarn --cwd server serve"
+    "heroku-postbuild": "cd fs_fe && npm install && npm run build"
   }
 }
